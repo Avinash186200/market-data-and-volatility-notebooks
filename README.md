@@ -1,5 +1,7 @@
 # Market Data and Volatility Notebooks
 
+[![CI](https://github.com/Avinash186200/market-data-and-volatility-notebooks/actions/workflows/ci.yml/badge.svg)](https://github.com/Avinash186200/market-data-and-volatility-notebooks/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11-blue) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 A small set of research notebooks I keep coming back to: cross-asset correlation, implied volatility, intraday bar resampling and a basic momentum ranking. Each one is self-contained and runs offline on synthetic data; two of them can pull public prices from Yahoo Finance instead.
 
 ## Structure
@@ -32,3 +34,12 @@ Outputs go to `data/outputs/` (git-ignored). Set `DATA_DIR` to put them somewher
 ## Status
 
 Learning and reference notebooks, not a trading system. The synthetic data is there so everything runs; any numbers it produces mean nothing about real markets.
+
+## Original research code
+
+[`original/`](original/README.md) holds the code as I first wrote it for this work, sanitised and nothing else:
+client, company and person names replaced, credentials and local paths removed, data files and notebook outputs
+dropped. It is kept so the real work can be read alongside the maintained version. Some of it contains the issues
+described above; comparing the two shows each fix.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the [CHANGELOG](CHANGELOG.md).
